@@ -64,9 +64,32 @@ h3 {
 
 /* header */
 
-.header {
+header {
   background-color: white;
   grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.part1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBar {
+  font-size: 40px;
+}
+
+.notifications {
+  display: flex;
+}
+
+.profPic {
+  width: 80px;
+  border-radius: 50%;
+  border: solid 1px;
+  border-color: black;
 }
 
 /* content */

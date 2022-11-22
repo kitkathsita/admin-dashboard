@@ -1,7 +1,7 @@
 body {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 6fr;
+  grid-template-columns: 310px 3fr;
+  grid-template-rows: 140px 6fr;
   height: 100vh;
   margin: 0%;
   font-family: 'Roboto', sans-serif;
@@ -16,12 +16,13 @@ body {
   padding: 25px;
   font-size: 25px;
   display: grid;
-  grid-template-rows: 1fr 3fr 3fr 5fr;
-  gap: 15px;
+  grid-template-rows: 65px 270px 180px 5fr;
+  gap: 25px;
 }
 
 ul {
   list-style: none;
+  grid-template-rows: auto;
 }
 
 ul, li {
@@ -29,14 +30,36 @@ ul, li {
   padding: 0%;
 }
 
+li {
+  display: flex;
+  gap: 10px;
+}
+
+.fa-solid {
+  width: 40px;
+  align-items: center;
+}
+
 .logo {
   font-size: 30px;
   text-transform: uppercase;
+  display: flex;
+  gap: 10px;
+}
+
+h3 {
+  font-size: larger;
+  margin: 0%;
+}
+
+.fa-brands {
+  width: 40px;
+  font-size: 40px;
 }
 
 .options1List, .options2List {
   display: grid;
-  gap: 5px;
+  gap: 10px;
 }
 
 /* header */
@@ -49,33 +72,71 @@ ul, li {
 /* content */
 
 .content {
-  background-color: #f5d0fe;
+  background-color: #fae8ff;
   grid-area: 2 / 2 / 3 / 3;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 5fr 2fr;
 }
 
 .yourprojects {
   grid-column: 1 / 2;
   padding: 25px;
   padding-right: 0%;
+  display: grid;
+  grid-template-rows: 50px 5fr;
 }
 
 .yourprojects p {
-  margin: 15px;
-  font-size: 25px;
+  margin: 0%;
+  padding: 15px 0px;
+  font-size: 20px;
 }
 
 .projectsContent {
   display: grid;
-  padding: 25px;
+  margin: 15px;
   gap: 15px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 24vw));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .project {
-  padding: 15px;
+  padding: 0%;
   background-color: white;
-  height: 20vh;
+  border-radius: 10px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 10px 1fr;
+}
+
+.colorBar {
+  background-color: #d946ef;
+  width: 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+.projectContent {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+  margin: 0%;
+  padding-top: 5px;
+}
+
+p .text {
+  margin: 0%;
+}
+
+.actions {
+  margin: 0%;
+  display: flex;
+  gap: 20px;
+  justify-content: right;
+  font-size: 25px;
+  padding-right: 15px;
+  padding-bottom: 10px;
 }
 

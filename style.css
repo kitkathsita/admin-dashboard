@@ -208,7 +208,7 @@ input {
   display: grid;
   margin: 15px;
   gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .project {
